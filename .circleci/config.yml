@@ -1,0 +1,14 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/hm-crypto-nodejs
+    docker:
+      - image: node:6.9.2
+    steps:
+      - checkout
+      - run:
+          name: Installing dependencies
+          command: npm install
+      - run:
+          name: Running project tests
+          command: npm test
