@@ -1,12 +1,43 @@
 {
   "name": "hm-crypto-nodejs",
   "version": "1.0.0",
-  "description": "",
+  "description": "Node.js library for signing and validating requests",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "nyc mocha"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heathmont/hm-crypto-nodejs"
+  },
+  "author": "Heathmont",
+  "license": "Heathmont",
+  "devDependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/mocha": "^2.2.44",
+    "@types/node": "^8.0.49",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "nyc": "^11.3.0",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.6.1"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "per-file": true,
+    "statements": 100,
+    "require": [
+      "ts-node/register"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ],
+    "sourceMap": true,
+    "instrument": true
+  }
 }
