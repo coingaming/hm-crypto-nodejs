@@ -7,7 +7,7 @@ Node.js library for signing and validating requests
 ## Installation
 
 ```
-npm install @heathmont/hm-crypto-nodejs --save
+npm install hm-crypto-nodejs --save
 ```
 
 
