@@ -1,6 +1,6 @@
 {
   "name": "hm-crypto-nodejs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Node.js library for signing and validating requests",
   "main": "index.js",
   "scripts": {
